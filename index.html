@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio</title>
+    <style>
+                *{
+                    background-color: olivedrab;
+                    margin: 0;
+                    padding: 0;
+                }
+                .container{
+                    display: flex;
+                    align-items: center;
+                    position: absolute;
+                    left: 33%;
+                    top: 40%;   
+                
+                }
+
+                .container div{
+                    margin: 10px;
+                   
+                }
+                .grade{
+                    background-color: black;
+                    width: 150px;
+                    height: 150px;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    align-items: center;
+                    justify-content: center;
+                    color: aliceblue;
+                    display: flex;
+                    font-size:medium;
+                    padding: 1px;
+                   
+                }
+                span {
+                    background-color:black;
+                    padding: 2px;
+
+                }
+              
+
+    </style>
+</head>
+<body>
+        <div class="container">
+    <div class="grade">
+        <span id="horas">00</span>
+        <span class="horas">Horas</span>
+    </div>
+    <div class="grade">
+        <span id="minutos">00</span>
+        <span class="minutos">Minutos</span>
+    </div>
+    <div class="grade">
+        <span id="segundos">00</span>
+        <span class="segundos">Segundos</span>
+    </div>
+        </div>
+    
+    <script>    
+
+        const horas = document.getElementById('horas')
+        const minutos = document.getElementById('minutos')
+        const segundos = document.getElementById('segundos')
+
+        const relogio = setInterval(function time(){
+            let dataHoje = new Date();
+
+            let hr = dataHoje.getHours()
+            let min = dataHoje.getMinutes();
+            let scd = dataHoje.getSeconds();
+
+            
+
+            horas.textContent = hr
+            minutos.textContent = min
+            segundos.textContent = scd
+        })
+            
+        
+
+
+
+    </script>
+</body>
+</html>
