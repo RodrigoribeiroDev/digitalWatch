@@ -1,0 +1,43 @@
+*{
+    background-color: rgb(10, 10, 10);
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container div{
+    margin: 10px;
+   
+}
+.grade{
+    background-color: rgb(35, 30, 30);
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: relative;
+    border-radius: 20px;
+}
+span {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    background-color: rgb(35, 30, 30);
+    font-family: "Exo", sans-serif;
+     font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+p{
+    color: aliceblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+}
